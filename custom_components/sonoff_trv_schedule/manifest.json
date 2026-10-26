@@ -1,0 +1,22 @@
+{
+  "domain": "sonoff_trv_schedule",
+  "name": "SONOFF TRV-ZBT Schedule Manager",
+  "after_dependencies": [
+    "zha"
+  ],
+  "codeowners": [
+    "@3jam3"
+  ],
+  "config_flow": true,
+  "dependencies": [
+    "frontend",
+    "http",
+    "zha"
+  ],
+  "documentation": "https://github.com/3jam3/sonoff-trv-schedule",
+  "integration_type": "service",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/3jam3/sonoff-trv-schedule/issues",
+  "single_config_entry": true,
+  "version": "1.0.0"
+}
