@@ -1,8 +1,11 @@
 {
   "domain": "sonoff_trv_schedule",
-  "name": "SONOFF TRV-ZBT Schedule Manager",
+  "name": "SONOFF TRV Schedule Manager",
   "after_dependencies": [
     "zha"
+  ],
+  "categories": [
+    "climate.thermostats_heating"
   ],
   "codeowners": [
     "@3jam3"
