@@ -4,9 +4,6 @@
   "after_dependencies": [
     "zha"
   ],
-  "categories": [
-    "climate.thermostats_heating"
-  ],
   "codeowners": [
     "@3jam3"
   ],
