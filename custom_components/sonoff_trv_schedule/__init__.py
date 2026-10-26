@@ -19,18 +19,12 @@ async def async_setup_entry(hass, entry):
 
     if not hass.data[DOMAIN].get("registered"):
         frontend_path = Path(__file__).parent / "frontend"
-        translations_path = Path(__file__).parent / "translations"
 
         await hass.http.async_register_static_paths(
             [
                 StaticPathConfig(
                     STATIC_URL,
                     str(frontend_path),
-                    False,
-                ),
-                StaticPathConfig(
-                    f"/{DOMAIN}/translations",
-                    str(translations_path),
                     False,
                 ),
             ]
