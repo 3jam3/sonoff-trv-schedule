@@ -9,9 +9,9 @@ A Home Assistant panel for viewing, creating and copying the weekly heating sche
 ## Requirements
 
 - Home Assistant with the **ZHA** integration.
-- The SONOFF custom ZHA quirk for your model (`TRV-ZBT.py`). The quirk provides the schedule entities and the private cluster (0xFC11) commands this panel uses. Standard ZHA clusters alone are **not** sufficient.
+- The SONOFF custom ZHA quirk for your model (e.g. `TRV-ZBT.py`). The quirk provides the schedule entities and the private cluster (0xFC11) commands this panel uses. Standard ZHA clusters alone are **not** sufficient.
   - The quirk script is published by SONOFF ([TRV-ZBT_ZHA_Script.zip](https://resource-wangsu.helplook.net/docker_production/a4j0b0/article/D1bJk2PE/attachments/TRV-ZBT_ZHA_Script.zip)). A copy as supplied is included in this repository in the `quirks/` folder for convenience; if in doubt, use the official version from SONOFF.
-  - If the quirk is added to ZHA upstream, it will no longer need to be installed separately; this README will be updated accordingly.
+  - When the quirk is added to ZHA upstream, it will no longer need to be installed separately; this README will be updated accordingly.
 
 Devices are listed in the panel only if ZHA serves them and the quirk cluster is available. A valve without the quirk simply does not appear.
 
