@@ -40,7 +40,7 @@ class SonoffTrvSchedulePanel extends HTMLElement {
 
   async loadTranslations(language=this.normalizeLanguage(this._hass?.language)){
     const load=async(lang)=>{
-      const r=await fetch(`/sonoff_trv_schedule/translations/${lang}.json`,{cache:'no-store'});
+      const r=await fetch(`/sonoff_trv_schedule/lang/${lang}.json`,{cache:'no-store'});
       if(!r.ok)throw new Error(`Translation load failed: ${r.status} ${r.statusText}`);
       const data=await r.json();
       if(!data?.panel||!Object.keys(data.panel).length){
