@@ -1,6 +1,6 @@
 # SONOFF TRV-ZBT Schedule Manager
 
-A Home Assistant panel for viewing, creating and copying the weekly heating schedules stored on **SONOFF TRV-ZBT** radiator valves (and closely related models) connected through **ZHA**.
+A Home Assistant panel for viewing, creating and copying the weekly heating schedules stored on **SONOFF TRV-ZBT** and compatible models connected through **ZHA**.
 
 > **Not for TRVZB.** This integration is not intended for, and has not been tested with, the standard SONOFF **TRVZB** valve.
 
