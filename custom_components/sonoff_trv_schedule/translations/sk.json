@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Správca plánov SONOFF TRV",
+        "description": "Nastavte panel Správca plánov SONOFF TRV."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Už je nakonfigurovaný. Je povolená iba jedna inštancia."
+    }
+  }
+}

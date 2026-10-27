@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Gestor de horários SONOFF TRV",
+        "description": "Configure o painel do Gestor de horários SONOFF TRV."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Já está configurado. Só é permitida uma única instância."
+    }
+  }
+}

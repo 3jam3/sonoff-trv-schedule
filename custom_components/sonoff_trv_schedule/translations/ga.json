@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Bainisteoir Sceideal SONOFF TRV",
+        "description": "Socraigh painéal Bhainisteoir Sceideal SONOFF TRV."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Tá sé cumraithe cheana féin. Ní cheadaítear ach sampla amháin."
+    }
+  }
+}

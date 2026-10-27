@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Rheolwr Amserlen SONOFF TRV",
+        "description": "Gosodwch banel Rheolwr Amserlen SONOFF TRV."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Wedi’i ffurfweddu eisoes. Dim ond un enghraifft a ganiateir."
+    }
+  }
+}

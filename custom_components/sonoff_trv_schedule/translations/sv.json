@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "SONOFF TRV-schemahanterare",
+        "description": "Konfigurera panelen SONOFF TRV-schemahanterare."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Redan konfigurerad. Endast en instans är tillåten."
+    }
+  }
+}
