@@ -17,19 +17,33 @@ Devices are listed in the panel only if ZHA serves them and the quirk cluster is
 
 ## Installation
 
-1. Install the quirk:
-   - copy `TRV-ZBT.py` (see [`quirks/`](quirks/)) to a folder such as `/config/custom_zha_quirks/`,
-   - enable it in `configuration.yaml`:
-     ```yaml
-     zha:
-       custom_quirks_path: /config/custom_zha_quirks/
-     ```
-   - restart Home Assistant and make sure the valve is (re)loaded by ZHA with the quirk applied.
-2. Install the integration:
-   - **HACS:** add this repository as a custom repository (category *Integration*), install it, restart Home Assistant; or
-   - **Manually:** copy `custom_components/sonoff_trv_schedule` to `/config/custom_components/` and restart.
-3. Go to *Settings → Devices & services → Add integration* and add **SONOFF TRV-ZBT Schedule Manager**. A **TRV Schedule** entry appears in the sidebar.
+### 1. Install the quirk
 
+1. Copy `TRV-ZBT.py` (see [`quirks/`](quirks/)) to a folder such as `/config/custom_zha_quirks/`.
+2. Enable it in `configuration.yaml`:
+   ```yaml
+   zha:
+     custom_quirks_path: /config/custom_zha_quirks/
+   ```
+3. Restart Home Assistant and make sure the valve is (re)loaded by ZHA with the quirk applied.
+
+### 2. Install the integration
+
+**Via HACS (recommended)**
+
+1. In HACS open the three-dot menu → **Custom repositories**.
+2. Add `https://github.com/3jam3/sonoff-trv-schedule` with category **Integration**.
+3. Find **SONOFF TRV Schedule Manager** in HACS, click **Download** and restart Home Assistant.
+
+Or use this button: [![Open your Home Assistant instance and open this repository in HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=3jam3&repository=sonoff-trv-schedule&category=integration)
+
+**Manually**
+
+Copy `custom_components/sonoff_trv_schedule` to `/config/custom_components/` and restart Home Assistant.
+
+### 3. Add the integration
+
+Go to **Settings → Devices & services → Add integration** and add **SONOFF TRV Schedule Manager**. A **TRV Schedule** entry appears in the sidebar.
 ## Usage
 
 Choose a valve, then either fetch an existing day to edit it or create a new schedule. Pick the destination days (and, when editing, the destination schedule and valve) and press **Send & apply**. Each day is written and then read back from the valve to confirm it.
