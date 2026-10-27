@@ -185,8 +185,6 @@ async def ws_devices(hass, connection, msg):
     devices = []
 
     registry_devices = dr.async_get(hass).devices
-    if hasattr(registry_devices, "values"):
-        registry_devices = registry_devices.values()
 
     for device in registry_devices:
         if (
