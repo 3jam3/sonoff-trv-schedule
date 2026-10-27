@@ -63,7 +63,7 @@
     "status_verified": "{days}: Gotowe. Harmonogram został zapisany w głowicy i potwierdzony odczytem zwrotnym. Teraz możesz zaspokoić pokusę klikania.",
     "status_unverified": "{days}: Harmonogram został zapisany, ale nie udało się jednoznacznie potwierdzić zapisu.",
     "status_write_failed": "{days}: Nie udało się zapisać harmonogramu.",
-    "error_backend": "Błąd backendu: {error}",
+    "error_backend": "Błąd wewnętrzny: {error}",
     "error_fetch": "Nie udało się pobrać harmonogramu: {error}",
     "error_apply": "Nie udało się zastosować harmonogramu: {error}",
     "validation_select_day": "Wybierz co najmniej jeden dzień docelowy.",
