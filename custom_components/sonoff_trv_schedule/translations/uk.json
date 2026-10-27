@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Менеджер розкладів SONOFF TRV",
+        "description": "Налаштуйте панель менеджера розкладів SONOFF TRV."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Уже налаштовано. Дозволено лише один екземпляр."
+    }
+  }
+}

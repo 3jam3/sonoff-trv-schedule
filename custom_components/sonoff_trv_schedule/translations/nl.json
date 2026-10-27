@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "SONOFF TRV Schemabeheer",
+        "description": "Stel het paneel van SONOFF TRV Schemabeheer in."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Al geconfigureerd. Slechts één instantie is toegestaan."
+    }
+  }
+}

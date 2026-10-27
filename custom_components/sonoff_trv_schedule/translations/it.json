@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Gestore programmi SONOFF TRV",
+        "description": "Configura il pannello del gestore programmi SONOFF TRV."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Già configurato. È consentita una sola istanza."
+    }
+  }
+}

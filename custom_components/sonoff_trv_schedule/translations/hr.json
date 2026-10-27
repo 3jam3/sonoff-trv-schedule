@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "SONOFF TRV upravitelj rasporeda",
+        "description": "Postavi ploču upravitelja rasporeda SONOFF TRV."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Već je konfigurirano. Dopuštena je samo jedna instanca."
+    }
+  }
+}

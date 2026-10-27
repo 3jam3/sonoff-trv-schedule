@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "SONOFF TRV -aikataulunhallinta",
+        "description": "Määritä SONOFF TRV -aikataulunhallinnan paneeli."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Jo määritetty. Vain yksi esiintymä sallitaan."
+    }
+  }
+}
