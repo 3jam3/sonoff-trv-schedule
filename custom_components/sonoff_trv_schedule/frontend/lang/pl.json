@@ -30,7 +30,7 @@
     "temperature": "Temperatura",
     "no_schedule_loaded": "Nie wczytano harmonogramu",
     "add_period": "+ Dodaj okres ({count}/12)",
-    "fetch_destination_hint": "Zaznacz dni, do których chcesz zastosować harmonogram. Kliknij <stong>WYCZYŚĆ</strong>, aby usunąć zaznaczenie.",
+    "fetch_destination_hint": "Zaznacz dni, do których chcesz zastosować harmonogram. Kliknij <strong>WYCZYŚĆ</strong>, aby usunąć zaznaczenie.",
     "write_settings_to": "Wyślij do",
     "write_to_trv": "w",
     "apply_verify": "Wyślij i zastosuj ({count})",
