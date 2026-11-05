@@ -8,7 +8,7 @@ A Home Assistant panel for viewing, creating and copying the weekly heating sche
 
 ## Requirements
 
-- Home Assistant with the **ZHA** integration.
+- Home Assistant 2026.10.0 or newer, with the **ZHA** integration.
 - The SONOFF custom ZHA quirk for your model (e.g. `TRV-ZBT.py`). The quirk provides the schedule entities and the private cluster (0xFC11) commands this panel uses. Standard ZHA clusters alone are **not** sufficient.
   - The quirk script is published by SONOFF ([TRV-ZBT_ZHA_Script.zip](https://resource-wangsu.helplook.net/docker_production/a4j0b0/article/D1bJk2PE/attachments/TRV-ZBT_ZHA_Script.zip)). A copy as supplied is included in this repository in the `quirks/` folder for convenience; if in doubt, use the official version from SONOFF.
   - When the quirk is added to ZHA upstream, it will no longer need to be installed separately; this README will be updated accordingly.
@@ -21,29 +21,49 @@ Devices are listed in the panel only if ZHA serves them and the quirk cluster is
 
 1. Copy `TRV-ZBT.py` (see [`quirks/`](quirks/)) to a folder such as `/config/custom_zha_quirks/`.
 2. Enable it in `configuration.yaml`:
+
    ```yaml
    zha:
      custom_quirks_path: /config/custom_zha_quirks/
    ```
+
 3. Restart Home Assistant and make sure the valve is (re)loaded by ZHA with the quirk applied.
 
 ### 2. Install the integration
 
-**Via HACS (recommended)**
+**Via Home Assistant Marketplace (recommended)**
+
+Find **SONOFF TRV Schedule Manager** in Marketplace and select **Download**. Restart Home Assistant if requested.
+
+**Via HACS**
 
 1. In HACS open the three-dot menu → **Custom repositories**.
 2. Add `https://github.com/3jam3/sonoff-trv-schedule` with category **Integration**.
 3. Find **SONOFF TRV Schedule Manager** in HACS, click **Download** and restart Home Assistant.
 
-Or use this button: [![Open your Home Assistant instance and open this repository in HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=3jam3&repository=sonoff-trv-schedule&category=integration)
+Or use this button:
+
+[![Open your Home Assistant instance and open this repository in HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=3jam3&repository=sonoff-trv-schedule&category=integration)
 
 **Manually**
 
 Copy `custom_components/sonoff_trv_schedule` to `/config/custom_components/` and restart Home Assistant.
 
-### 3. Add the integration
+## Configuration
 
-Go to **Settings → Devices & services → Add integration** and add **SONOFF TRV Schedule Manager**. A **TRV Schedule** entry appears in the sidebar.
+To add the integration to your Home Assistant instance, use this button:
+
+[![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=sonoff_trv_schedule)
+
+If the button does not work:
+
+1. Go to **Settings → Devices & services**.
+2. Select **Add integration**.
+3. Search for **SONOFF TRV Schedule Manager**.
+4. Follow the setup instructions.
+
+A **TRV Schedule** entry appears in the sidebar after setup.
+
 ## Usage
 
 Choose a valve, then either fetch an existing day to edit it or create a new schedule. Pick the destination days (and, when editing, the destination schedule and valve) and press **Send & apply**. Each day is written and then read back from the valve to confirm it.
